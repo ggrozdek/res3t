@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0d0b0b"><title>RES3T CLUB</title>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon.png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;0,900;1,700;1,900&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet"><style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -20,14 +21,14 @@
 }
 html,body{min-height:100%;}
 html{background-color:var(--bg);background-image:var(--pat);background-size:700px auto;background-repeat:repeat;background-attachment:fixed;}
-body{color:var(--white);font-family:'Cormorant Garamond',serif;font-weight:300;overflow-x:hidden;}
+body{color:var(--white);font-family:'Cormorant Garamond',serif;font-weight:300;overflow-x:hidden;padding:0 0.5rem;}@media(min-width:700px){body{padding:0;}}
 body::before{content:'';position:fixed;inset:0;background:rgba(13,11,11,.91);z-index:0;pointer-events:none;}
 ::-webkit-scrollbar{width:3px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--gold-dim);}
 
 .site{width:100%;min-height:100vh;position:relative;z-index:1;}
 
 /* ── INNER ── */
-.inner{max-width:var(--inner);margin:0 auto;padding:0 1.6rem;}
+.inner{max-width:var(--inner);margin:0 auto;padding:0 1.2rem;}
 @media(min-width:500px){.inner{padding:0 2.2rem;}}
 @media(min-width:700px){.inner{padding:0 3rem;}}
 
@@ -107,7 +108,7 @@ nav{
 
 
 /* ── CARD GRID ── */
-.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 1rem;}
 @media(min-width:700px){.card-grid-4{grid-template-columns:repeat(4,1fr);gap:12px;}}
 
 /* ── FLIP CARDS ── */
@@ -118,13 +119,13 @@ nav{
 .flip-wrap.flipped .flip-inner{transform:rotateY(180deg);}
 .ff,.fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;}
 .fb{transform:rotateY(180deg);}
-.ff{border:1px solid var(--border);display:flex;flex-direction:column;justify-content:flex-end;}
+.ff{border:1px solid var(--border);display:flex;flex-direction:column;justify-content:flex-end;background:#0a0808;}
 .ff-bg{
   position:absolute;inset:0;
   background-size:cover,700px auto;background-position:center,0 0;background-repeat:no-repeat,repeat;
-  filter:brightness(.5);transition:filter .4s;
+  filter:brightness(.75);transition:filter .4s;
 }
-.flip-wrap.flipped .ff-bg,.flip-wrap:hover .ff-bg{filter:brightness(.38);}
+.flip-wrap.flipped .ff-bg,.flip-wrap:hover .ff-bg{filter:brightness(.55);}
 .ff-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,11,11,.99) 0%,rgba(13,11,11,.3) 50%,transparent 100%);}
 .ff-c{position:relative;z-index:1;padding:1.1rem 1rem;}
 .ff-day{font-family:'Bodoni Moda',serif;font-size:2.8rem;font-weight:900;font-style:italic;line-height:1;color:var(--gold);display:block;}
@@ -150,8 +151,8 @@ nav{
 
 /* ── GALLERY CARDS ── */
 .gal-card{aspect-ratio:2/3;position:relative;overflow:hidden;cursor:pointer;-webkit-tap-highlight-color:transparent;}
-.gc-img{position:absolute;inset:0;background-size:cover,700px auto;background-position:center,0 0;background-repeat:no-repeat,repeat;filter:brightness(.52) saturate(.55);transition:filter .4s,transform .5s;transform:scale(1.02);}
-.gal-card:hover .gc-img,.gal-card:active .gc-img{filter:brightness(.68) saturate(.65);transform:scale(1.06);}
+.gc-img{position:absolute;inset:0;background-size:cover,700px auto;background-position:center,0 0;background-repeat:no-repeat,repeat;filter:brightness(.72) saturate(.7);transition:filter .4s,transform .5s;transform:scale(1.02);}
+.gal-card:hover .gc-img,.gal-card:active .gc-img{filter:brightness(.85) saturate(.8);transform:scale(1.06);}
 .gc-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,11,11,.97) 0%,rgba(13,11,11,.18) 55%,transparent 100%);}
 .gc-info{position:absolute;bottom:0;left:0;right:0;padding:.9rem .85rem;}
 .gc-date{font-family:'Cinzel',serif;font-size:.52rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.28rem;}
@@ -297,12 +298,12 @@ footer{border-top:1px solid var(--border);background:var(--bg);padding:1.8rem 0;
     </div>
     <div class="fb"><div class="fb-pat"></div>
       <div class="fb-c">
-        <div><span class="fb-date">Sob, 25. April 2026</span><div class="fb-name">Balkan Night</div><div class="fb-div"></div>
+        <div><span class="fb-date">Sob, 25. April 2026</span><div class="fb-name">LATIN AMERICA Party</div><div class="fb-div"></div>
           <span class="fb-lbl">Nastopajo</span>
-          <div class="fb-lineup">TBA</div>
-          <div class="fb-tags"><span class="fb-tag">18+</span></div>
+          <div class="fb-lineup">KHENDY PRESTIGE vs BIGSPIN</div>
+          <div class="fb-tags"><span class="fb-tag">LATINO</span></div>
         </div>
-        <div class="fb-foot"><div class="fb-time"><span>Vstop <strong>22:00</strong></span><span>Konec <strong>04:00</strong></span></div></div>
+        <div class="fb-foot"><div class="fb-time"><span>Vstop <strong>23:00</strong></span><span>Konec <strong>04:00</strong></span></div></div>
       </div>
     </div>
   </div>
